@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="PRECISION BUILD — Institutional 9-Hour Deep Work Protocol. A systems-engineered productivity framework built on neuroscience, tri-nap architecture, and structured output cycles."/>
+  <title>PRECISION BUILD — Operational Deep Work System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="container utility-bar__inner">
+    <span>PRECISION BUILD OPERATIONAL FRAMEWORK &nbsp;·&nbsp; Version 4.0 &nbsp;·&nbsp; Internal Reference Document</span>
+    <div class="utility-right">
+      <span id="utilClock">—</span>
+      <span class="util-sep">|</span>
+      <span id="utilDate">—</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRIMARY NAV -->
+<header class="primary-nav" id="primaryNav">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="42" height="42" rx="1" stroke="currentColor" stroke-width="2"/>
+          <line x1="3" y1="24" x2="45" y2="24" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+          <line x1="24" y1="3" x2="24" y2="45" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+          <circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="2.5" fill="currentColor"/>
+          <line x1="3"  y1="3"  x2="45" y2="45" stroke="currentColor" stroke-width=".7" opacity=".25"/>
+          <line x1="45" y1="3"  x2="3"  y2="45" stroke="currentColor" stroke-width=".7" opacity=".25"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">PRECISION BUILD</span>
+        <span class="brand-tag">Deep Work Protocol System</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about"       class="nl">Overview</a>
+      <a href="#architecture" class="nl">Architecture</a>
+      <a href="#schedule"    class="nl">Schedule</a>
+      <a href="#live"        class="nl">Live Status</a>
+      <a href="#analytics"   class="nl">Analytics</a>
+      <a href="#guide"       class="nl">Field Guide</a>
+      <a href="#philosophy"  class="nl">Philosophy</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-nav-primary" onclick="document.getElementById('live').scrollIntoView({behavior:'smooth'})">Live Status</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-scroll-bar" id="navScrollBar"></div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="#about"       class="md-link">Overview</a>
+  <a href="#architecture" class="md-link">Architecture</a>
+  <a href="#schedule"    class="md-link">Schedule</a>
+  <a href="#live"        class="md-link">Live Status</a>
+  <a href="#analytics"   class="md-link">Analytics</a>
+  <a href="#guide"       class="md-link">Field Guide</a>
+  <a href="#philosophy"  class="md-link">Philosophy</a>
+</div>
+
+<!-- ====================================================
+     HERO
+     ==================================================== -->
+<section id="hero" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-chevron hero-chevron--1"></div>
+    <div class="hero-chevron hero-chevron--2"></div>
+    <svg class="hero-svg-lines" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <line x1="0" y1="200" x2="1440" y2="200" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="0" y1="400" x2="1440" y2="400" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="0" y1="600" x2="1440" y2="600" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <line x1="360" y1="0" x2="360" y2="800" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="720" y1="0" x2="720" y2="800" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <line x1="1080" y1="0" x2="1080" y2="800" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <polygon points="900,0 1440,0 1440,800 600,800" fill="rgba(0,87,168,0.12)"/>
+    </svg>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-bar"></span>
+      <span>Operational Framework &nbsp;//&nbsp; v4.0 Certified &nbsp;//&nbsp; Neuroscience-Based</span>
+    </div>
+    <h1 class="hero-title">Nine Hours of<br/><em>Deep Work.</em><br/>Every Day.</h1>
+    <p class="hero-lead">A systems-engineered daily protocol built on sleep science, tri-nap recovery architecture,
+    and structured output cycles. Designed for sustained single-project performance across
+    two-to-four-week high-output sprint deployments.</p>
+
+    <div class="hero-kpi-row">
+      <div class="hero-kpi">
+        <div class="hero-kpi__num" data-target="9">0</div>
+        <div class="hero-kpi__label">Hours Deep Work</div>
+      </div>
+      <div class="hero-kpi-sep"></div>
+      <div class="hero-kpi">
+        <div class="hero-kpi__num" data-target="5">0</div>
+        <div class="hero-kpi__label">Work Sessions</div>
+      </div>
+      <div class="hero-kpi-sep"></div>
+      <div class="hero-kpi">
+        <div class="hero-kpi__num" data-target="3">0</div>
+        <div class="hero-kpi__label">Nap Protocols</div>
+      </div>
+      <div class="hero-kpi-sep"></div>
+      <div class="hero-kpi">
+        <div class="hero-kpi__num" data-target="6">0</div>
+        <div class="hero-kpi__sub">h 45m</div>
+        <div class="hero-kpi__label">Core Sleep</div>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#schedule" class="btn-primary">View Full Schedule</a>
+      <a href="#guide"    class="btn-outline">Operations Guide</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-chevron"></div>
+  </div>
+</section>
+
+<!-- ====================================================
+     OVERVIEW
+     ==================================================== -->
+<section id="about" class="section sec-white">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-eyebrow">System Overview</div>
+      <h2 class="sec-title">What Is Precision Build?</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-text">
+        <p class="about-lead">Precision Build is an institutional-grade daily operational framework engineered to sustain nine hours of focused, high-quality deep work within a single twenty-four-hour cycle — without sacrificing sleep or long-term cognitive health.</p>
+        <p>The system is not a motivational schedule. It is a precision-engineered protocol in which every transition, recovery window, and sleep event is architecturally placed to maintain peak executive function across two distinct work blocks separated by a deep recovery phase. Its structure derives from sleep-stage research, ultradian rhythm science, and time-on-task performance studies.</p>
+        <p>The framework is designed for a two-to-four-week deployment window on a single primary project — software development, writing, research, creative production, or any domain demanding sustained single-task cognitive depth. It is not a permanent lifestyle; it is a controlled operational sprint with a defined start, duration, and exit.</p>
+        <div class="pull-quote">
+          <div class="pq-bar"></div>
+          <blockquote>"Nine hours sits at the absolute upper boundary of what sustained single-project focus can support without quality degradation — achievable only through tri-nap architecture."</blockquote>
+        </div>
+      </div>
+
+      <div class="about-diagram">
+        <div class="diagram-label">24-Hour Operational Cycle</div>
+        <svg viewBox="0 0 420 420" id="cycleSvg" class="cycle-svg" aria-label="24-hour cycle visualisation"></svg>
+        <div class="cycle-legend" id="cycleLegend"></div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="pillar-num">01</div>
+        <h3>Dual Work Block Architecture</h3>
+        <p>A 4h 45m morning block and a 5h 30m evening block, each operating at full cognitive capacity — separated by a protected 3-hour recovery buffer rather than continuous diminishing-returns effort.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">02</div>
+        <h3>Tri-Nap Recovery System</h3>
+        <p>Three strategically placed naps — prophylactic, restorative, and priming — pre-load, consolidate, and re-ignite cognitive performance at the day's three critical transition points.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">03</div>
+        <h3>Fixed Dinner Anchor</h3>
+        <p>A hard 21:45–22:15 dinner bisects the evening block into a 2-hour sprint and a 3-hour extended session, mirroring interval training principles and preventing accumulated fatigue within the block.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">04</div>
+        <h3>Protected Wind-Down</h3>
+        <p>A mandatory 60-minute wind-down from 01:15–02:15 is the mechanism by which nine hours of daily output becomes sustainable over multiple weeks without compounding sleep debt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     ARCHITECTURE
+     ==================================================== -->
+<section id="architecture" class="section sec-navy">
+  <div class="container">
+    <div class="sec-hd sec-hd--light">
+      <div class="sec-eyebrow sec-eyebrow--light">System Architecture</div>
+      <h2 class="sec-title sec-title--light">Time Allocation &amp; Specifications</h2>
+      <div class="sec-rule sec-rule--light"></div>
+    </div>
+
+    <div class="arch-layout">
+      <div class="arch-table-wrap">
+        <h3 class="arch-sub">24-Hour Distribution Table</h3>
+        <table class="arch-table" id="archTable">
+          <thead><tr><th>Category</th><th>Time Slot</th><th>Duration</th><th>% of Day</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="arch-visual-wrap">
+        <h3 class="arch-sub">Proportional Allocation</h3>
+        <div class="stacked-bar-track" id="stackedBar"></div>
+        <div class="stacked-bar-legend" id="stackedLegend"></div>
+        <p class="arch-note">At 37.5% of total awake hours in genuine deep focus, Precision Build operates well above the 10–25% range typical of unstructured knowledge work.</p>
+      </div>
+    </div>
+
+    <div class="specs-strip">
+      <div class="spec reveal"><div class="spec-label">Wake</div><div class="spec-val">09:00</div></div>
+      <div class="spec reveal"><div class="spec-label">Nap 01</div><div class="spec-val">11:00</div></div>
+      <div class="spec reveal"><div class="spec-label">Block I End</div><div class="spec-val">16:15</div></div>
+      <div class="spec reveal"><div class="spec-label">Nap 02</div><div class="spec-val">16:15</div></div>
+      <div class="spec reveal"><div class="spec-label">Nap 03</div><div class="spec-val">19:15</div></div>
+      <div class="spec reveal"><div class="spec-label">Dinner</div><div class="spec-val">21:45</div></div>
+      <div class="spec reveal"><div class="spec-label">Session Close</div><div class="spec-val">01:15</div></div>
+      <div class="spec reveal"><div class="spec-label">Sleep</div><div class="spec-val">02:15</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FULL SCHEDULE
+     ==================================================== -->
+<section id="schedule" class="section sec-white">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-eyebrow">Operational Timeline</div>
+      <h2 class="sec-title">Complete 24-Hour Schedule</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-intro">Every block verified and documented. The schedule sums to exactly 1,440 minutes. Filter by category to isolate specific schedule components. The "NOW" indicator updates in real time using the local system clock.</p>
+    </div>
+
+    <div class="sched-controls">
+      <div class="filter-group">
+        <button class="fb active" data-filter="all">All Blocks</button>
+        <button class="fb" data-filter="deepwork">Deep Work</button>
+        <button class="fb" data-filter="nap">Nap Protocol</button>
+        <button class="fb" data-filter="meal">Meals</button>
+        <button class="fb" data-filter="buffer">Buffer</button>
+        <button class="fb" data-filter="routine">Routine</button>
+        <button class="fb" data-filter="winddown">Wind-Down</button>
+      </div>
+      <div class="sched-count">Showing <strong id="schedCount">19</strong> of 19 entries</div>
+    </div>
+
+    <div class="sched-table-scroll">
+      <table class="sched-table">
+        <thead>
+          <tr>
+            <th class="tc-time">Time</th>
+            <th class="tc-dur">Duration</th>
+            <th class="tc-cat">Category</th>
+            <th class="tc-act">Activity</th>
+            <th class="tc-notes">Operational Notes</th>
+          </tr>
+        </thead>
+        <tbody id="schedBody"></tbody>
+      </table>
+    </div>
+
+    <div class="sched-total">
+      <span class="total-label">Verified Total</span>
+      <span class="total-value">24 hours &nbsp;·&nbsp; 1,440 minutes &nbsp;·&nbsp; Arithmetically confirmed</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     LIVE STATUS + TIMER
+     ==================================================== -->
+<section id="live" class="section sec-navy">
+  <div class="container">
+    <div class="sec-hd sec-hd--light">
+      <div class="sec-eyebrow sec-eyebrow--light">Real-Time Operations</div>
+      <h2 class="sec-title sec-title--light">Live System Status</h2>
+      <div class="sec-rule sec-rule--light"></div>
+    </div>
+
+    <div class="live-layout">
+
+      <!-- Phase status panel -->
+      <div class="live-card">
+        <div class="live-card__hd">
+          <div class="live-dot-wrap"><span class="live-dot"></span><span>LIVE</span></div>
+          <span class="live-card__title">Current Operational Phase</span>
+        </div>
+        <div class="live-phase-name" id="livePhName">Detecting phase...</div>
+        <div class="live-phase-cat" id="livePhCat">—</div>
+
+        <div class="ph-prog-wrap">
+          <div class="ph-prog-track">
+            <div class="ph-prog-fill" id="phProgFill" style="width:0%"></div>
+          </div>
+          <div class="ph-prog-labels">
+            <span id="phStart">—</span>
+            <span id="phPct">0%</span>
+            <span id="phEnd">—</span>
+          </div>
+        </div>
+
+        <div class="live-meta">
+          <div class="lm-item"><span class="lm-key">Elapsed</span><span class="lm-val" id="lmElapsed">—</span></div>
+          <div class="lm-item"><span class="lm-key">Remaining</span><span class="lm-val" id="lmRemaining">—</span></div>
+          <div class="lm-item"><span class="lm-key">Next Phase</span><span class="lm-val" id="lmNext">—</span></div>
+          <div class="lm-item"><span class="lm-key">Starts In</span><span class="lm-val" id="lmStartsIn">—</span></div>
+        </div>
+
+        <div class="day-prog-wrap">
+          <div class="dp-row"><span class="dp-label">Daily Progress (09:00 → 02:15)</span><span class="dp-pct" id="dayPct">0%</span></div>
+          <div class="dp-track"><div class="dp-fill" id="dayFill" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <!-- Nap timer -->
+      <div class="live-card">
+        <div class="live-card__hd">
+          <span class="live-card__title">Nap Protocol Timer</span>
+        </div>
+        <div class="nap-selector">
+          <button class="nsb selected" data-dur="1200" data-name="NAP 01 — Prophylactic">
+            <div class="nsb-num">NAP 01</div>
+            <div class="nsb-time">20 min</div>
+            <div class="nsb-window">11:00 – 11:20</div>
+            <div class="nsb-type">Prophylactic</div>
+          </button>
+          <button class="nsb" data-dur="3600" data-name="NAP 02 — Power Nap">
+            <div class="nsb-num">NAP 02</div>
+            <div class="nsb-time">60 min</div>
+            <div class="nsb-window">16:15 – 17:15</div>
+            <div class="nsb-type">Restorative</div>
+          </button>
+          <button class="nsb" data-dur="1200" data-name="NAP 03 — Prime Nap">
+            <div class="nsb-num">NAP 03</div>
+            <div class="nsb-time">20 min</div>
+            <div class="nsb-window">19:15 – 19:35</div>
+            <div class="nsb-type">Priming</div>
+          </button>
+        </div>
+
+        <div class="timer-zone">
+          <svg viewBox="0 0 200 200" class="timer-ring" aria-hidden="true">
+            <circle cx="100" cy="100" r="84" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="10"/>
+            <circle cx="100" cy="100" r="84" fill="none" stroke="#4A9FDF" stroke-width="10"
+              stroke-dasharray="528" stroke-dashoffset="0" id="timerRing"
+              stroke-linecap="butt" transform="rotate(-90 100 100)"/>
+          </svg>
+          <div class="timer-center">
+            <div class="timer-display" id="timerDisplay">20:00</div>
+            <div class="timer-state" id="timerState">READY</div>
+            <div class="timer-name" id="timerName">NAP 01 — Prophylactic</div>
+          </div>
+        </div>
+
+        <div class="timer-btns">
+          <button class="tbtn tbtn-start" id="btnStart">Start</button>
+          <button class="tbtn tbtn-pause" id="btnPause" disabled>Pause</button>
+          <button class="tbtn tbtn-reset" id="btnReset">Reset</button>
+        </div>
+        <div class="timer-msg" id="timerMsg">Select a nap protocol above, then press Start when ready to sleep.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     ANALYTICS
+     ==================================================== -->
+<section id="analytics" class="section sec-offwhite">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-eyebrow">Performance Data</div>
+      <h2 class="sec-title">System Analytics</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-intro">Quantitative visualisation of the protocol's structural design. These charts represent the system's engineering, not personal tracking data. They illustrate the rationale behind each time-allocation decision.</p>
+    </div>
+
+    <div class="analytics-layout">
+
+      <div class="chart-card reveal">
+        <div class="chart-hd">
+          <h3>Time Allocation — Full 24 Hours</h3>
+          <p>Proportional breakdown of all schedule categories</p>
+        </div>
+        <div id="allocChart"></div>
+      </div>
+
+      <div class="chart-card reveal">
+        <div class="chart-hd">
+          <h3>Work Session Comparison</h3>
+          <p>Duration in minutes per session across five deep work blocks</p>
+        </div>
+        <div class="session-bars-wrap" id="sessionChart"></div>
+      </div>
+
+      <div class="chart-card chart-card--wide reveal">
+        <div class="chart-hd">
+          <h3>Cognitive Intensity Curve</h3>
+          <p>Estimated relative cognitive performance across the 17-hour 15-minute awake window (09:00 → 02:15). Nap events shown as vertical markers.</p>
+        </div>
+        <div class="curve-wrap">
+          <svg id="cognitiveSvg" viewBox="0 0 900 220" class="curve-svg" aria-label="Cognitive intensity curve"></svg>
+          <div class="curve-x-labels">
+            <span>09:00</span><span>11:00</span><span>13:00</span><span>16:15</span><span>19:45</span><span>22:00</span><span>02:15</span>
+          </div>
+          <div class="curve-legend">
+            <span class="cl-item"><span class="cl-line" style="background:#0057A8"></span>Cognitive Level</span>
+            <span class="cl-item"><span class="cl-dot" style="background:#C8102E"></span>Nap Events</span>
+            <span class="cl-item"><span class="cl-dot" style="background:#2E7D32"></span>Meal Events</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card chart-card--wide reveal">
+        <div class="chart-hd">
+          <h3>Tri-Nap Sleep Stage Architecture</h3>
+          <p>NREM sleep stage progression for each nap protocol. N1 = light, N2 = consolidated, N3 = deep slow-wave sleep.</p>
+        </div>
+        <svg id="napStageSvg" viewBox="0 0 900 230" class="nap-svg" aria-label="Sleep stage architecture"></svg>
+        <div class="nap-stage-legend">
+          <span class="nsl-item"><span class="nsl-box" style="background:#6B9FD4"></span>N1 — Light Sleep</span>
+          <span class="nsl-item"><span class="nsl-box" style="background:#0057A8"></span>N2 — Consolidated</span>
+          <span class="nsl-item"><span class="nsl-box" style="background:#003F7F"></span>N3 — Deep Slow-Wave</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FIELD GUIDE
+     ==================================================== -->
+<section id="guide" class="section sec-white">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-eyebrow">Operational Manual</div>
+      <h2 class="sec-title">Field Operations Guide</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-intro">A complete step-by-step execution guide for every major phase of the 24-hour cycle. This manual provides operational instructions, rationale, and failure-mode documentation for each critical transition point in the schedule.</p>
+    </div>
+
+    <div class="guide-articles">
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">01</div>
+          <div class="guide-art__hd">
+            <h3>Wake Protocol</h3>
+            <div class="guide-art__time">09:00 — Morning Activation</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The first five minutes of the day determine the neurochemical trajectory of the entire morning block. Immediately upon waking: consume 500ml of water before standing. Remain seated upright for five minutes before rising. Do not reach for a phone or any screen during this window.</p>
+          <p>Dressing fully — in clothes appropriate for working outside the home — is a documented behavioural cue that activates the cognitive identity associated with productive work. The brain uses environmental and physical anchors to calibrate its operating mode. Remaining in sleep clothes creates a signal conflict that extends the mental warm-up period of the morning session by 20–30 minutes.</p>
+          <div class="guide-warning"><span class="gw-badge">Failure Mode</span> Checking a phone within the first ten minutes introduces dopamine-driven reactivity that displaces the calm, focused state required for deep work entry. This effect can persist for 60–90 minutes into the morning session.</div>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">02</div>
+          <div class="guide-art__hd">
+            <h3>Day Planning Session</h3>
+            <div class="guide-art__time">09:20–10:30 — 70 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The 70-minute planning window is not optional time that can be converted into early work. Its function is to eliminate all decision-making overhead from the work sessions that follow. By 10:30 you must be able to answer with complete precision: what is the single output being built today, what is the exact starting point for Session A, and what constitutes a successful completion of the day.</p>
+          <p>Review the previous session's close note. Identify any unresolved threads that need to be consciously parked before the nap. Set specific, measurable completion targets for Sessions A and B. Ambiguity carried into a work session converts directly into unproductive time and cognitive drain.</p>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">03</div>
+          <div class="guide-art__hd">
+            <h3>Nap 01 — Prophylactic</h3>
+            <div class="guide-art__time">11:00–11:20 — 20 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The prophylactic nap is administered before fatigue arrives, not after it sets in. Its purpose is to pre-load the nervous system's alertness reserve. Research on pre-fatigue napping indicates a 15–20% improvement in sustained attention in the subsequent work session compared to subjects who do not nap before fatigue onset.</p>
+          <p>Set an alarm for exactly 20 minutes. Target Stage 1–2 sleep only — do not attempt to fall deeply asleep. Lie flat, darken the room, use an eye mask and ear plugs if available. Upon waking, remain still for three minutes before standing. Hydrate immediately. Enter the workspace with the first task already written down before the nap began.</p>
+          <div class="guide-success"><span class="gs-badge">Key Outcome</span> Session A begins at full operating temperature rather than requiring the 20–30 minute warm-up typical of a cold start from extended wakefulness.</div>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">04</div>
+          <div class="guide-art__hd">
+            <h3>Work Block I — Sessions A &amp; B</h3>
+            <div class="guide-art__time">11:30–16:15 — 4 Hours 45 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>Session A (11:30–13:30) captures the late-morning executive function peak — the period of highest prefrontal cortex availability in most individuals operating on this wake schedule. Single-task focus only. No communication applications open. Phone off or in a separate room. This is the primary output window of the morning block.</p>
+          <p>Lunch at 13:30 is a mandatory and complete departure from the workspace. The physical and psychological break is what allows Session B to begin with a refreshed attentional state rather than carrying the residual cognitive load of the previous two hours. Step outside briefly if possible. Eat sitting down without screens of any kind.</p>
+          <p>Session B (14:00–16:15) builds directly on Session A's output while the project context remains warm in working memory. This two-hour-fifteen-minute session is the point in the day where the previous session's thread is most productively extended, as all context-loading overhead from Session A still persists.</p>
+          <div class="guide-warning"><span class="gw-badge">Critical</span> Skipping the lunch departure and working through it does not extend productive output — it delays fatigue onset by 20 minutes while degrading Session B quality by a substantially larger margin.</div>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">05</div>
+          <div class="guide-art__hd">
+            <h3>Recovery Buffer</h3>
+            <div class="guide-art__time">16:15–19:15 — 3 Hours</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The three-hour buffer zone is architecturally protected. No work material enters this zone under any circumstance — no "quick checks," no passive review, no "just five minutes." This prohibition exists because the 60-minute power nap at 16:15 requires complete psychological disengagement from work-related cognition to achieve adequate depth.</p>
+          <p>The power nap (16:15–17:15) completes approximately one full NREM cycle — N1 through N2 into early N3. This is the schedule's primary recovery instrument. Upon waking from this nap, remain still for five minutes before standing to allow sleep inertia to clear. The 17:15–19:15 window is genuine personal time: physical movement, personal administration, non-work creative activity, or passive rest.</p>
+          <div class="guide-warning"><span class="gw-badge">Most Common Violation</span> Introducing any work activity into the buffer zone degrades the quality of the 60-minute nap and compromises the cognitive ignition function of Nap 03. This is the constraint most frequently violated during the first week of protocol deployment.</div>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">06</div>
+          <div class="guide-art__hd">
+            <h3>Nap 03 — Prime Nap</h3>
+            <div class="guide-art__time">19:15–19:35 — 20 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The prime nap immediately precedes the five-and-a-half-hour evening work block. Its function is ignition, not recovery. A 20-minute Stage 1–2 nap at this point in the awake window sharply improves reaction time, working memory retrieval speed, and sustained attention onset — precisely the three capabilities required for the evening session to begin at full operational capacity.</p>
+          <p>Do not extend this nap beyond 20 minutes. Entering Stage 3 sleep at this point causes sleep inertia — a 30–60 minute grogginess period — that would impair the first two hours of the evening session entirely. Set a hard alarm. Rise at 19:35 without delay. Enter the workspace at 19:45 with the session's first task written before the nap.</p>
+          <div class="guide-success"><span class="gs-badge">Key Outcome</span> Session C begins feeling sharp and primed rather than sluggish — as if it were hour two of the day rather than hour eleven of the awake window.</div>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">07</div>
+          <div class="guide-art__hd">
+            <h3>Work Block II — Sessions C, D &amp; E</h3>
+            <div class="guide-art__time">19:45–01:15 — 5 Hours 30 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The evening block is the schedule's largest output window, split into three sessions by the fixed dinner anchor. Session C (19:45–21:45) is the first two-hour sprint, often the most creatively productive window of the entire day due to the priming effect of Nap 03, lower ambient stimulation, and the absence of administrative overhead.</p>
+          <p>Dinner at 21:45 is a hard anchor and non-negotiable. It provides metabolic refuelling and bisects the evening block with a 30-minute reset. Session D (22:15–00:15) is a two-hour post-dinner sprint operating from a refuelled state. Session E (00:15–01:15) is the final one-hour focused close.</p>
+          <p>At exactly 01:15, write a session close note. Not a summary of what was accomplished — a precise next-action record that documents the exact re-entry point for the following day. This is the single most important habit in the protocol for protecting sleep quality.</p>
+        </div>
+      </article>
+
+      <article class="guide-art reveal">
+        <div class="guide-art__meta">
+          <div class="guide-step-badge">08</div>
+          <div class="guide-art__hd">
+            <h3>Wind-Down Protocol</h3>
+            <div class="guide-art__time">01:15–02:15 — 60 Minutes</div>
+          </div>
+        </div>
+        <div class="guide-art__body">
+          <p>The sixty-minute wind-down is the mechanism by which nine hours of daily deep work becomes sustainable across two to four weeks. Without it, sleep onset latency extends, sleep quality degrades, and the system collapses through accumulated sleep debt by day four or five. It is neither optional nor adjustable in either direction.</p>
+          <p>Sequence: five minutes of light physical movement to release postural tension accumulated from extended sitting. Ten to fifteen minutes of journaling on paper covering the day's output, any unresolved emotional or cognitive material, and three specific targets for tomorrow's sessions. The remainder of the hour: low-intensity reading, calm audio, or quiet winding activity in low light.</p>
+          <div class="guide-warning"><span class="gw-badge">Hard Prohibitions After 01:15</span> Phone scrolling — delays melatonin onset 30–60 minutes. Unresolved work review — reactivates problem-solving loops. Gaming — elevates heart rate and cortisol. Overhead bright lighting — directly suppresses melatonin production. High-stimulation content (news, debates, confrontational media) — resets the hypothalamic arousal state entirely.</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     PHILOSOPHY
+     ==================================================== -->
+<section id="philosophy" class="section sec-navy">
+  <div class="container">
+    <div class="sec-hd sec-hd--light">
+      <div class="sec-eyebrow sec-eyebrow--light">Engineering Rationale</div>
+      <h2 class="sec-title sec-title--light">Why the System Is Designed This Way</h2>
+      <div class="sec-rule sec-rule--light"></div>
+    </div>
+
+    <div class="phil-grid">
+      <div class="phil-art reveal">
+        <h3>On Nine Hours of Deep Work</h3>
+        <p>This figure sits at the absolute upper boundary of what sustained single-project focus can support without quality degradation. It is achievable only because three specific conditions operate simultaneously: the tri-nap system pre-loads, restores, and primes attention at the three critical junctures of the day; the three-hour buffer zone creates genuine cognitive reset between blocks; and dinner precisely bisects the evening block, preventing accumulated fatigue within it. Remove any one of these conditions and sustainable nine-hour output collapses to approximately five to six hours of diminishing-returns effort — which is the outcome most knowledge workers already experience with conventional scheduling.</p>
+      </div>
+      <div class="phil-art reveal">
+        <h3>On the Fixed Dinner Window</h3>
+        <p>21:45–22:15 is not arbitrary. It falls exactly two hours into the five-and-a-half-hour evening block, splitting it into a two-hour sprint and a three-hour extended session. This mirrors the principle of interval training: defined effort windows separated by a brief reset outperform an equivalent unbroken block of identical total duration. The body is metabolically refuelled; the brain re-enters with refreshed working memory capacity rather than carrying three hours of continuous load. The specific timing ensures dinner is complete before midnight, preventing metabolic disruption to the core sleep cycle that follows two hours and fifteen minutes later.</p>
+      </div>
+      <div class="phil-art reveal">
+        <h3>On the 60-Minute Power Nap</h3>
+        <p>A 60-minute nap placed between two work blocks serves a fundamentally different neurological function from the flanking 20-minute naps. It completes approximately one full NREM sleep cycle — N1 through N2 into early N3 — allowing memory consolidation of Block I's output and partial homeostatic sleep pressure relief. This is precisely why Work Block II can sustain five hours of productive output late into the night: the brain has partially reset its working memory buffer and consolidated the morning's work rather than carrying it as raw, unprocessed cognitive load. The 60-minute duration is the minimum required to reliably reach N3; shorter naps at this point produce incomplete consolidation.</p>
+      </div>
+      <div class="phil-art reveal">
+        <h3>On Three Naps Instead of One</h3>
+        <p>Each nap serves a distinct neurological function that cannot be consolidated into a single longer nap event without losing at least one of the three functions entirely. Nap 01 is prophylactic — it pre-loads alertness reserves before fatigue sets in. Nap 02 is restorative — it closes Block I and consolidates its output while providing homeostatic pressure relief. Nap 03 is a primer — it fires the evening session like an ignition system, sharpening the precise capabilities required for a five-hour work block cold start. Combining them into one longer mid-afternoon nap would provide restorative benefit only, reducing total sustainable deep work output and removing both the prophylactic pre-loading and the evening priming entirely.</p>
+      </div>
+      <div class="phil-art reveal">
+        <h3>On the 09:00 Wake Time</h3>
+        <p>09:00 is the latest permissible wake time compatible with a productive morning block while still preserving the three-hour buffer window and full evening session structure. An earlier wake time extends the pre-nap window without improving morning block output, since the prophylactic nap timing is fixed to the optimal pre-peak nap window regardless of wake time. A later wake time compresses the morning block and cascades delays through all subsequent anchors — either shortening the evening session or pushing the sleep time past 02:15, which compresses the core sleep cycle and degrades the following day's function. The 09:00 anchor is a structural constraint, not a lifestyle preference.</p>
+      </div>
+      <div class="phil-art reveal">
+        <h3>On Protocol Deployment Duration</h3>
+        <p>Precision Build v4.0 is designed as a two-to-four-week sprint protocol, not a permanent operating mode. The nine-hour daily output target is achievable within this window for most individuals with adequate sleep quality, consistent nutrition, and genuine buffer zone compliance. Beyond four weeks, homeostatic sleep pressure and social isolation effects begin to compound and degrade both output quality and protocol adherence. The appropriate use of this framework is as a controlled, high-intensity sprint on a single primary project — a product launch, a manuscript, a software release, a research sprint — followed by a recovery period of normal scheduling before the next deployment cycle.</p>
+      </div>
+    </div>
+
+    <!-- Prohibitions -->
+    <div class="prohib-panel">
+      <div class="prohib-panel__hd">
+        <span class="prohib-icon">⚠</span>
+        <div>
+          <div class="prohib-title">Absolute Prohibitions After 01:15 AM</div>
+          <div class="prohib-sub">Each of the following behaviours independently compromises sleep quality enough to degrade the following day's protocol performance.</div>
+        </div>
+      </div>
+      <div class="prohib-items">
+        <div class="prohib-row"><span class="prohib-x">✗</span><div><strong>Phone Scrolling</strong><span>Triggers dopamine release, suppresses melatonin onset by 30–60 minutes via blue light and psychological arousal stimulation.</span></div></div>
+        <div class="prohib-row"><span class="prohib-x">✗</span><div><strong>Unresolved Work Review</strong><span>Reactivates prefrontal cortex problem-solving loops and introduces cognitive arousal that prevents sleep onset. Write the close note before 01:15.</span></div></div>
+        <div class="prohib-row"><span class="prohib-x">✗</span><div><strong>Gaming</strong><span>Maintains competitive arousal state, elevates heart rate, and extends the cortisol response cycle past the intended sleep window.</span></div></div>
+        <div class="prohib-row"><span class="prohib-x">✗</span><div><strong>Overhead Bright Lighting</strong><span>Directly suppresses melatonin production via retinal photoreceptor pathways. Use only low, warm-spectrum indirect lighting after 01:00.</span></div></div>
+        <div class="prohib-row"><span class="prohib-x">✗</span><div><strong>High-Stimulation Content</strong><span>News, debate content, or confrontational media resets the hypothalamic arousal state and generates a cortisol response associated with perceived threat or urgency.</span></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     FOOTER
+     ==================================================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <div class="brand-mark brand-mark--sm">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="42" height="42" rx="1" stroke="currentColor" stroke-width="2"/>
+            <line x1="3" y1="24" x2="45" y2="24" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+            <line x1="24" y1="3" x2="24" y2="45" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+            <circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="24" cy="24" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <div class="footer-brand-name">PRECISION BUILD</div>
+          <div class="footer-brand-tag">Operational Deep Work Framework v4.0</div>
+        </div>
+      </div>
+      <p class="footer-about">An institutional-grade 9-hour deep work protocol engineered for 2–4 week high-output project sprints. Built on sleep science, tri-nap architecture, and structured output cycle design.</p>
+    </div>
+
+    <div class="footer-nav-cols">
+      <div class="footer-col">
+        <div class="footer-col-hd">System</div>
+        <a href="#about">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#live">Live Status</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-hd">Data &amp; Analysis</div>
+        <a href="#analytics">System Analytics</a>
+        <a href="#analytics">Allocation Chart</a>
+        <a href="#analytics">Cognitive Curve</a>
+        <a href="#analytics">Nap Architecture</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-hd">Documentation</div>
+        <a href="#guide">Field Guide</a>
+        <a href="#guide">Execution Steps</a>
+        <a href="#philosophy">Engineering Rationale</a>
+        <a href="#philosophy">Prohibitions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <div class="container footer-base-inner">
+      <span>Precision Build v4.0 &nbsp;·&nbsp; 24-Hour Cycle Arithmetically Verified</span>
+      <span id="footerClock">—</span>
+      <span>Engineered for 2–4 Week High-Output Sprint Cycles on a Single Primary Project</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
